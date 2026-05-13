@@ -1,0 +1,261 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Courage — an evolution</title>
+    <style>
+      html, body {
+        margin: 0;
+        height: 100%;
+        background: #0a0612;
+        font-family: Georgia, "Times New Roman", serif;
+      }
+      body {
+        display: grid;
+        place-items: center;
+      }
+      svg {
+        width: min(94vw, 880px);
+        height: auto;
+        border-radius: 14px;
+        box-shadow: 0 24px 70px rgba(0, 0, 0, 0.7);
+      }
+    </style>
+  </head>
+  <body>
+    <svg viewBox="0 0 800 500" xmlns="http://www.w3.org/2000/svg" role="img"
+         aria-label="Courage the Cowardly Dog evolving from egg to screaming dog">
+      <defs>
+        <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0%"  stop-color="#2a1840"/>
+          <stop offset="55%" stop-color="#7a4f8a"/>
+          <stop offset="100%" stop-color="#d99cbf"/>
+        </linearGradient>
+        <linearGradient id="ground" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0%"   stop-color="#5a3e22"/>
+          <stop offset="100%" stop-color="#2a1a0e"/>
+        </linearGradient>
+        <radialGradient id="moonGlow" cx="0.5" cy="0.5" r="0.5">
+          <stop offset="0%"   stop-color="#fff4d8" stop-opacity="0.55"/>
+          <stop offset="100%" stop-color="#fff4d8" stop-opacity="0"/>
+        </radialGradient>
+        <radialGradient id="winGlow" cx="0.5" cy="0.5" r="0.5">
+          <stop offset="0%"   stop-color="#ffe066" stop-opacity="0.9"/>
+          <stop offset="100%" stop-color="#ffe066" stop-opacity="0"/>
+        </radialGradient>
+      </defs>
+
+      <rect width="800" height="500" fill="url(#sky)"/>
+
+      <circle cx="640" cy="105" r="90" fill="url(#moonGlow)"/>
+      <circle cx="640" cy="105" r="38" fill="#f5e8c8"/>
+      <circle cx="628" cy="96"  r="5" fill="#d8c39a" opacity="0.6"/>
+      <circle cx="650" cy="115" r="3" fill="#d8c39a" opacity="0.6"/>
+      <circle cx="635" cy="120" r="4" fill="#d8c39a" opacity="0.5"/>
+
+      <g fill="#fff" opacity="0.7">
+        <circle cx="80"  cy="60"  r="0.9"/>
+        <circle cx="180" cy="40"  r="0.7"/>
+        <circle cx="260" cy="90"  r="1"/>
+        <circle cx="430" cy="55"  r="0.8"/>
+        <circle cx="520" cy="160" r="0.7"/>
+        <circle cx="720" cy="220" r="0.9"/>
+        <circle cx="60"  cy="180" r="0.7"/>
+        <circle cx="340" cy="150" r="0.6"/>
+      </g>
+
+      <path d="M0,340 Q120,310 240,330 T520,330 T800,340 L800,360 L0,360 Z"
+            fill="#3a2440" opacity="0.85"/>
+
+      <g transform="translate(120,300)">
+        <circle cx="40" cy="55" r="55" fill="url(#winGlow)"/>
+        <polygon points="-6,22 40,-8 86,22" fill="#150a1a"/>
+        <rect x="0" y="20" width="80" height="55" fill="#1a0f22"/>
+        <rect x="54" y="-14" width="11" height="22" fill="#150a1a"/>
+        <rect x="15" y="36" width="14" height="14" fill="#ffd84a"/>
+        <rect x="51" y="36" width="14" height="14" fill="#ffd84a"/>
+        <line x1="22" y1="36" x2="22" y2="50" stroke="#1a0f22" stroke-width="1.2"/>
+        <line x1="15" y1="43" x2="29" y2="43" stroke="#1a0f22" stroke-width="1.2"/>
+        <line x1="58" y1="36" x2="58" y2="50" stroke="#1a0f22" stroke-width="1.2"/>
+        <line x1="51" y1="43" x2="65" y2="43" stroke="#1a0f22" stroke-width="1.2"/>
+        <rect x="34" y="55" width="12" height="20" fill="#0a0510"/>
+      </g>
+
+      <g stroke="#0e0618" stroke-width="3.5" fill="none" stroke-linecap="round">
+        <path d="M700,400 Q694,330 706,255 Q700,205 718,170"/>
+        <path d="M708,290 Q732,272 752,256"/>
+        <path d="M706,250 Q682,242 660,228"/>
+        <path d="M714,220 Q736,212 752,198"/>
+        <path d="M720,195 Q728,185 730,170"/>
+        <path d="M704,275 Q694,265 686,258"/>
+      </g>
+      <g stroke="#0e0618" stroke-width="1.5" fill="none" stroke-linecap="round" opacity="0.85">
+        <path d="M748,256 q4,-4 8,-3"/>
+        <path d="M752,198 q4,-2 7,-6"/>
+        <path d="M660,228 q-5,-1 -8,-4"/>
+      </g>
+
+      <rect y="360" width="800" height="140" fill="url(#ground)"/>
+      <g stroke="#1a0f08" stroke-width="1" opacity="0.6">
+        <path d="M0,388 Q200,392 400,388 T800,390" fill="none"/>
+        <path d="M0,418 Q200,422 400,418 T800,420" fill="none"/>
+        <path d="M0,448 Q200,452 400,448 T800,450" fill="none"/>
+      </g>
+      <g fill="#0a0508" opacity="0.7">
+        <ellipse cx="80"  cy="470" rx="14" ry="2.5"/>
+        <ellipse cx="560" cy="465" rx="10" ry="2"/>
+        <ellipse cx="680" cy="478" rx="16" ry="2.8"/>
+        <ellipse cx="230" cy="478" rx="11" ry="2.2"/>
+      </g>
+
+      <g>
+        <ellipse cx="400" cy="402" rx="42" ry="54" fill="#f8a4be"
+                 stroke="#8a3a5a" stroke-width="2"/>
+        <ellipse cx="384" cy="378" rx="9" ry="14" fill="#ffffff" opacity="0.45"/>
+        <ellipse cx="410" cy="426" rx="5" ry="3" fill="#c66285" opacity="0.7"/>
+        <ellipse cx="420" cy="395" rx="4" ry="2.5" fill="#c66285" opacity="0.7"/>
+        <ellipse cx="388" cy="436" rx="3" ry="2"  fill="#c66285" opacity="0.7"/>
+        <animate attributeName="opacity"
+          values="1; 1; 0; 0"
+          keyTimes="0; 0.22; 0.27; 1" dur="10s" repeatCount="indefinite"/>
+      </g>
+
+      <g>
+        <ellipse cx="400" cy="418" rx="32" ry="26" fill="#f8a4be"/>
+        <ellipse cx="400" cy="378" rx="30" ry="27" fill="#f8a4be"/>
+        <ellipse cx="378" cy="358" rx="11" ry="20" fill="#f8a4be" transform="rotate(-25 378 358)"/>
+        <ellipse cx="422" cy="358" rx="11" ry="20" fill="#f8a4be" transform="rotate(25 422 358)"/>
+        <ellipse cx="375" cy="358" rx="6"  ry="12" fill="#d97aa0" transform="rotate(-25 375 358)" opacity="0.7"/>
+        <ellipse cx="425" cy="358" rx="6"  ry="12" fill="#d97aa0" transform="rotate(25 425 358)" opacity="0.7"/>
+        <ellipse cx="388" cy="376" rx="6.5" ry="8"  fill="#fff"/>
+        <ellipse cx="412" cy="376" rx="6.5" ry="8"  fill="#fff"/>
+        <circle  cx="389" cy="378" r="3.2" fill="#1a0a18"/>
+        <circle  cx="413" cy="378" r="3.2" fill="#1a0a18"/>
+        <circle  cx="390" cy="376" r="1"   fill="#fff"/>
+        <circle  cx="414" cy="376" r="1"   fill="#fff"/>
+        <ellipse cx="400" cy="394" rx="3" ry="2.2" fill="#1a0a18"/>
+        <path d="M395,402 q5,3 10,0" stroke="#1a0a18" stroke-width="1.4" fill="none"/>
+        <rect x="378" y="438" width="8" height="14" rx="2" fill="#f8a4be"/>
+        <rect x="394" y="438" width="8" height="14" rx="2" fill="#f8a4be"/>
+        <rect x="410" y="438" width="8" height="14" rx="2" fill="#f8a4be"/>
+        <animate attributeName="opacity"
+          values="0; 0; 1; 1; 0; 0"
+          keyTimes="0; 0.22; 0.27; 0.47; 0.52; 1" dur="10s" repeatCount="indefinite"/>
+      </g>
+
+      <g>
+        <ellipse cx="400" cy="412" rx="46" ry="40" fill="#f8a4be"/>
+        <ellipse cx="378" cy="395" rx="7" ry="4" fill="#c66285" opacity="0.85"/>
+        <ellipse cx="420" cy="405" rx="6" ry="3.5" fill="#c66285" opacity="0.85"/>
+        <ellipse cx="400" cy="425" rx="5" ry="3" fill="#c66285" opacity="0.85"/>
+        <ellipse cx="400" cy="348" rx="42" ry="38" fill="#f8a4be"/>
+        <ellipse cx="368" cy="316" rx="14" ry="30" fill="#f8a4be" transform="rotate(-32 368 316)"/>
+        <ellipse cx="432" cy="316" rx="14" ry="30" fill="#f8a4be" transform="rotate(32 432 316)"/>
+        <ellipse cx="364" cy="318" rx="8" ry="20" fill="#d97aa0" transform="rotate(-32 364 318)" opacity="0.75"/>
+        <ellipse cx="436" cy="318" rx="8" ry="20" fill="#d97aa0" transform="rotate(32 436 318)" opacity="0.75"/>
+        <ellipse cx="400" cy="366" rx="16" ry="12" fill="#ffc4d6"/>
+        <ellipse cx="385" cy="342" rx="10" ry="13" fill="#fff" stroke="#1a0a18" stroke-width="1.2"/>
+        <ellipse cx="415" cy="342" rx="10" ry="13" fill="#fff" stroke="#1a0a18" stroke-width="1.2"/>
+        <ellipse cx="386" cy="346" rx="3.5" ry="4.5" fill="#1a0a18"/>
+        <ellipse cx="416" cy="346" rx="3.5" ry="4.5" fill="#1a0a18"/>
+        <circle cx="387" cy="344" r="1.2" fill="#fff"/>
+        <circle cx="417" cy="344" r="1.2" fill="#fff"/>
+        <ellipse cx="400" cy="362" rx="3.6" ry="2.6" fill="#1a0a18"/>
+        <path d="M388,374 q4,3 8,0 t8,0 t8,0" stroke="#1a0a18" stroke-width="1.6" fill="none"/>
+        <rect x="378" y="446" width="9" height="12" rx="2.5" fill="#f8a4be"/>
+        <rect x="413" y="446" width="9" height="12" rx="2.5" fill="#f8a4be"/>
+        <animate attributeName="opacity"
+          values="0; 0; 1; 1; 0; 0"
+          keyTimes="0; 0.47; 0.52; 0.72; 0.77; 1" dur="10s" repeatCount="indefinite"/>
+      </g>
+
+      <g>
+        <animateTransform attributeName="transform" type="translate"
+          values="0,0; 2.5,-1.5; -2,2; 1.5,-2.5; -2.5,1; 0,0"
+          dur="0.12s" repeatCount="indefinite"/>
+        <animate attributeName="opacity"
+          values="0; 0; 1; 1; 0"
+          keyTimes="0; 0.72; 0.78; 0.97; 1" dur="10s" repeatCount="indefinite"/>
+
+        <ellipse cx="400" cy="415" rx="48" ry="44" fill="#f8a4be"/>
+        <ellipse cx="378" cy="398" rx="7" ry="4" fill="#c66285"/>
+        <ellipse cx="420" cy="408" rx="6" ry="3.5" fill="#c66285"/>
+        <ellipse cx="400" cy="430" rx="5" ry="3" fill="#c66285"/>
+
+        <path d="M362,388 Q330,332 348,278" stroke="#f8a4be" stroke-width="13"
+              fill="none" stroke-linecap="round"/>
+        <path d="M438,388 Q470,332 452,278" stroke="#f8a4be" stroke-width="13"
+              fill="none" stroke-linecap="round"/>
+        <g fill="#f8a4be" stroke="#8a3a5a" stroke-width="0.6">
+          <circle cx="342" cy="270" r="6"/>
+          <circle cx="334" cy="262" r="4"/>
+          <circle cx="350" cy="258" r="4"/>
+          <circle cx="458" cy="270" r="6"/>
+          <circle cx="466" cy="262" r="4"/>
+          <circle cx="450" cy="258" r="4"/>
+        </g>
+
+        <ellipse cx="400" cy="332" rx="46" ry="50" fill="#f8a4be"/>
+
+        <rect x="366" y="232" width="14" height="58" rx="6" fill="#f8a4be"/>
+        <rect x="420" y="232" width="14" height="58" rx="6" fill="#f8a4be"/>
+        <rect x="368" y="246" width="10" height="40" rx="4" fill="#d97aa0" opacity="0.7"/>
+        <rect x="422" y="246" width="10" height="40" rx="4" fill="#d97aa0" opacity="0.7"/>
+
+        <ellipse cx="380" cy="315" rx="18" ry="22" fill="#fff" stroke="#1a0a18" stroke-width="2.2"/>
+        <ellipse cx="420" cy="315" rx="18" ry="22" fill="#fff" stroke="#1a0a18" stroke-width="2.2"/>
+        <circle cx="380" cy="315" r="3.2" fill="#1a0a18"/>
+        <circle cx="420" cy="315" r="3.2" fill="#1a0a18"/>
+
+        <ellipse cx="400" cy="346" rx="3.8" ry="2.8" fill="#1a0a18"/>
+
+        <ellipse cx="400" cy="382" rx="28" ry="26" fill="#1a0a14"/>
+        <path d="M378,366 l4,10 l4,-10z" fill="#fff"/>
+        <path d="M388,364 l4,12 l4,-12z" fill="#fff"/>
+        <path d="M400,364 l4,12 l4,-12z" fill="#fff"/>
+        <path d="M412,366 l4,10 l4,-10z" fill="#fff"/>
+        <path d="M380,400 l4,-9 l4,9z" fill="#fff"/>
+        <path d="M392,402 l4,-10 l4,10z" fill="#fff"/>
+        <path d="M404,402 l4,-10 l4,10z" fill="#fff"/>
+        <path d="M416,400 l4,-9 l4,9z" fill="#fff"/>
+        <ellipse cx="400" cy="392" rx="10" ry="6" fill="#e0567a"/>
+        <path d="M398,396 q2,3 4,0" stroke="#a8334f" stroke-width="0.8" fill="none"/>
+
+        <rect x="378" y="452" width="9" height="12" rx="2.5" fill="#f8a4be"/>
+        <rect x="413" y="452" width="9" height="12" rx="2.5" fill="#f8a4be"/>
+      </g>
+
+      <g font-family="Georgia, serif" font-size="22" font-style="italic"
+         text-anchor="middle" fill="#f5e0d0">
+        <text x="400" y="488">
+          <tspan>egg.</tspan>
+          <animate attributeName="opacity"
+            values="1; 1; 0; 0" keyTimes="0; 0.22; 0.27; 1"
+            dur="10s" repeatCount="indefinite"/>
+        </text>
+        <text x="400" y="488">
+          <tspan>pup.</tspan>
+          <animate attributeName="opacity"
+            values="0; 0; 1; 1; 0; 0"
+            keyTimes="0; 0.22; 0.27; 0.47; 0.52; 1"
+            dur="10s" repeatCount="indefinite"/>
+        </text>
+        <text x="400" y="488">
+          <tspan>courage.</tspan>
+          <animate attributeName="opacity"
+            values="0; 0; 1; 1; 0; 0"
+            keyTimes="0; 0.47; 0.52; 0.72; 0.77; 1"
+            dur="10s" repeatCount="indefinite"/>
+        </text>
+        <text x="400" y="488" font-style="normal" font-weight="bold"
+              letter-spacing="1.5" fill="#ffe7e0">
+          <tspan>THE THINGS I DO FOR LOVE!</tspan>
+          <animate attributeName="opacity"
+            values="0; 0; 1; 1; 0"
+            keyTimes="0; 0.72; 0.78; 0.97; 1"
+            dur="10s" repeatCount="indefinite"/>
+        </text>
+      </g>
+    </svg>
+  </body>
+</html>

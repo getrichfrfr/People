@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Elephant eating grass</title>
+    <style>
+      html, body {
+        margin: 0;
+        height: 100%;
+        background: #0d1b2a;
+      }
+      body {
+        display: grid;
+        place-items: center;
+      }
+      svg {
+        width: min(90vw, 720px);
+        height: auto;
+        border-radius: 16px;
+        box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+        background: #cce9ff;
+      }
+    </style>
+  </head>
+  <body>
+    <svg viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg" role="img"
+         aria-label="Cartoon elephant eating grass">
+      <defs>
+        <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0%" stop-color="#a8d8ff"/>
+          <stop offset="100%" stop-color="#e6f4ff"/>
+        </linearGradient>
+        <linearGradient id="ground" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0%" stop-color="#7ec850"/>
+          <stop offset="100%" stop-color="#4d8a30"/>
+        </linearGradient>
+      </defs>
+
+      <rect width="600" height="400" fill="url(#sky)"/>
+      <circle cx="510" cy="70" r="32" fill="#ffe066"/>
+
+      <g fill="#fff" opacity="0.85">
+        <ellipse cx="110" cy="80"  rx="36" ry="10"/>
+        <ellipse cx="140" cy="72"  rx="28" ry="9"/>
+        <ellipse cx="360" cy="60"  rx="44" ry="11"/>
+        <ellipse cx="395" cy="52"  rx="30" ry="9"/>
+      </g>
+
+      <rect y="320" width="600" height="80" fill="url(#ground)"/>
+
+      <g fill="#5fb238">
+        <path d="M40,320 q3,-22 7,0z"/>
+        <path d="M60,320 q-2,-18 4,0z"/>
+        <path d="M260,330 q3,-22 6,0z"/>
+        <path d="M320,330 q-1,-18 4,0z"/>
+        <path d="M520,330 q3,-22 6,0z"/>
+        <path d="M548,330 q-1,-18 4,0z"/>
+        <path d="M576,330 q3,-22 6,0z"/>
+      </g>
+
+      <g transform="translate(70,320)">
+        <g>
+          <path d="M0,0 q3,-28 7,0z"  fill="#5fb238"/>
+          <path d="M8,0 q-2,-32 5,0z" fill="#4ea83a"/>
+          <path d="M16,0 q3,-26 7,0z" fill="#5fb238"/>
+          <path d="M24,0 q-1,-30 4,0z" fill="#4ea83a"/>
+          <animateTransform attributeName="transform" type="scale"
+            values="1 1; 1 1; 1 0.15; 1 0.15; 1 1"
+            keyTimes="0; 0.45; 0.55; 0.9; 1"
+            dur="4s" repeatCount="indefinite"/>
+        </g>
+      </g>
+
+      <g>
+        <animateTransform attributeName="transform" type="translate"
+          values="0,0; 0,-2; 0,0; 0,-2; 0,0"
+          dur="4s" repeatCount="indefinite"/>
+
+        <rect x="200" y="260" width="32" height="72" rx="8" fill="#9a9aa3"/>
+        <rect x="400" y="260" width="32" height="72" rx="8" fill="#9a9aa3"/>
+        <rect x="258" y="262" width="32" height="70" rx="8" fill="#b0b0b8"/>
+        <rect x="342" y="262" width="32" height="70" rx="8" fill="#b0b0b8"/>
+
+        <path d="M440,235 q18,15 14,42"
+              stroke="#9a9aa3" stroke-width="6"
+              fill="none" stroke-linecap="round"/>
+        <circle cx="455" cy="282" r="6" fill="#7d7d85"/>
+
+        <ellipse cx="310" cy="235" rx="125" ry="62" fill="#b5b5bd"/>
+
+        <ellipse cx="180" cy="220" rx="62" ry="58" fill="#b5b5bd"/>
+
+        <path d="M205,180 q26,4 22,42 q-6,18 -26,18 q-10,-30 4,-60z"
+              fill="#9a9aa3"/>
+
+        <circle cx="155" cy="205" r="4.5" fill="#222"/>
+        <circle cx="153.5" cy="203.5" r="1.4" fill="#fff"/>
+
+        <path d="M150,258 q-3,14 7,24"
+              stroke="#fff8e0" stroke-width="6"
+              fill="none" stroke-linecap="round"/>
+
+        <path stroke="#b5b5bd" stroke-width="26" fill="none" stroke-linecap="round"
+              d="M140,250 Q100,300 88,318">
+          <animate attributeName="d"
+            values="
+              M140,250 Q100,300 88,318;
+              M140,250 Q100,300 88,318;
+              M140,250 Q90,290 150,262;
+              M140,250 Q90,290 150,262;
+              M140,250 Q100,300 88,318
+            "
+            keyTimes="0; 0.45; 0.6; 0.9; 1"
+            dur="4s" repeatCount="indefinite"/>
+        </path>
+      </g>
+
+      <g fill="#4ea83a">
+        <path d="M210,332 q3,-22 7,0z"/>
+        <path d="M232,332 q-2,-18 4,0z"/>
+        <path d="M380,332 q3,-22 6,0z"/>
+        <path d="M420,332 q-1,-20 5,0z"/>
+        <path d="M462,332 q3,-22 7,0z"/>
+      </g>
+    </svg>
+  </body>
+</html>
